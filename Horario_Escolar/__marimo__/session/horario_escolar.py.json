@@ -1,0 +1,89 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "bd0a3c50f20134ca8ca948a2ca9e17cd",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "32eae5fb51acc46b1b038e94d8d4bd89",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"trabalho-pratico-gerador-de-horario-escolar\">Trabalho Pr\u00e1tico: Gerador de Hor\u00e1rio Escolar</h1>\n<h2 id=\"contexto-e-enquadramento\">Contexto e Enquadramento</h2>\n<span class=\"paragraph\">Uma escola precisa de gerar automaticamente o hor\u00e1rio semanal de um conjunto de turmas, respeitando a carga letiva, a disponibilidade e as salas limitadas. Este projeto implementa um sistema automatizado capaz de gerar o hor\u00e1rio inicial e reagir de forma incremental a altera\u00e7\u00f5es de recursos.</span>\n<hr />\n<h2 id=\"relatorio-tecnico-do-projeto\">Relat\u00f3rio T\u00e9cnico do Projeto</h2>\n<span class=\"paragraph\">Este documento detalha o planeamento, a arquitetura e as estrat\u00e9gias implementadas no desenvolvimento do sistema de gera\u00e7\u00e3o de hor\u00e1rios escolares.</span>\n<h3 id=\"1-ferramenta-de-modelacao-or-tools-e-cp-sat\">1. Ferramenta de Modela\u00e7\u00e3o: OR-Tools e CP-SAT</h3>\n<span class=\"paragraph\">A escolha recaiu sobre o solver <strong>CP-SAT</strong> da biblioteca OR-Tools. Embora tenha existido uma experimenta\u00e7\u00e3o inicial com o solver SCIP (usado na Ficha 3), o CP-SAT revelou-se a ferramenta ideal para este problema espec\u00edfico de escalonamento. Problemas de aloca\u00e7\u00e3o de hor\u00e1rios assentam essencialmente em vari\u00e1veis booleanas e em restri\u00e7\u00f5es l\u00f3gicas e temporais, \u00e1reas onde os solvers baseados em Satisfa\u00e7\u00e3o de Restri\u00e7\u00f5es (CSP) demonstram uma performance de pesquisa significativamente superior a abordagens puramente matem\u00e1ticas de programa\u00e7\u00e3o linear. O CP-SAT permite expressar as regras escolares de forma nativa e eficiente, acelerando o processo de converg\u00eancia para um hor\u00e1rio exequ\u00edvel.</span>\n<h3 id=\"2-importacao-de-dados\">2. Importa\u00e7\u00e3o de Dados</h3>\n<span class=\"paragraph\">A importa\u00e7\u00e3o de dados foi implementada recorrendo unicamente \u00e0 biblioteca <code>csv</code> nativa do Python (<code>csv.DictReader</code>). Esta escolha reflete uma abordagem focada na simplicidade e na redu\u00e7\u00e3o de depend\u00eancias externas desnecess\u00e1rias. Como os ficheiros fornecidos cont\u00eam estruturas tabulares simples (<code>turmas.csv</code>, <code>disciplinas.csv</code>, <code>salas.csv</code>, <code>disponibilidade_excecoes.csv</code>), esta estrutura \u00e9 facilmente manipul\u00e1vel e iter\u00e1vel aquando da gera\u00e7\u00e3o das vari\u00e1veis de decis\u00e3o pelo modelo CP-SAT, n\u00e3o se justificando a sobrecarga de importar bibliotecas de manipula\u00e7\u00e3o de dados mais pesadas (como o Pandas).</span>\n<h3 id=\"3-implementacao-das-restricoes-obrigatorias-r1-a-r8\">3. Implementa\u00e7\u00e3o das Restri\u00e7\u00f5es Obrigat\u00f3rias (R1 a R8)</h3>\n<span class=\"paragraph\">O modelo cria vari\u00e1veis booleanas para representar se uma turma tem aula de uma determinada disciplina num dia e per\u00edodo. <strong>Nota de Escala:</strong> Em vez dos habituais 5 per\u00edodos di\u00e1rios, o sistema foi dimensionado para utilizar <strong>10 per\u00edodos di\u00e1rios</strong>, permitindo cobrir turnos alargados (manh\u00e3 e tarde), o que oferece uma maior gama de varia\u00e7\u00f5es, flexibilidade de hor\u00e1rios e capacidade para acomodar mais turmas e atividades.</span>\n<ul>\n<li><strong>R1 e R5 (Sem sobreposi\u00e7\u00e3o de turmas e professores):</strong> O modelo agrupa todas as vari\u00e1veis associadas a uma mesma turma ou professor num determinado per\u00edodo, impondo que a soma seja <marimo-tex class=\"arithmatex\">||(\\le 1||)</marimo-tex>.</li>\n<li><strong>R2 (Carga letiva exata):</strong> A soma das vari\u00e1veis de uma turma para uma dada disciplina ao longo da semana \u00e9 for\u00e7ada a igualar rigorosamente o valor de <code>carga_semanal</code>.</li>\n<li><strong>R3 e R4 (Aulas di\u00e1rias e Blocos duplos):</strong> Para tempos simples, a soma di\u00e1ria \u00e9 <marimo-tex class=\"arithmatex\">||(\\le 1||)</marimo-tex>. Para disciplinas com <code>duplo_periodo=sim</code>, foi criada uma matriz de vari\u00e1veis auxiliares booleanas que for\u00e7a a ocorr\u00eancia de duas aulas consecutivas e v\u00e1lidas nos per\u00edodos <marimo-tex class=\"arithmatex\">||(p||)</marimo-tex> e <marimo-tex class=\"arithmatex\">||(p-1||)</marimo-tex>.</li>\n<li><strong>R6 (Indisponibilidades):</strong> As regras baseadas em <code>disponibilidade_excecoes.csv</code> s\u00e3o aplicadas no momento da cria\u00e7\u00e3o das vari\u00e1veis: se o professor est\u00e1 indispon\u00edvel num (dia, per\u00edodo), a vari\u00e1vel respetiva n\u00e3o \u00e9 sequer instanciada.</li>\n<li><strong>R7 (Limites de Salas):</strong> As salas s\u00e3o mapeadas por tipo (normal ou especial). O somat\u00f3rio de aulas ativas num tipo de sala por per\u00edodo n\u00e3o pode exceder a quantidade f\u00edsica dispon\u00edvel na escola.</li>\n<li><strong>R8 (Input din\u00e2mico):</strong> Toda a gera\u00e7\u00e3o do modelo ocorre atrav\u00e9s da itera\u00e7\u00e3o din\u00e2mica dos dicion\u00e1rios importados, sem par\u00e2metros r\u00edgidos (<em>hardcoded</em>).</li>\n</ul>\n<h3 id=\"4-otimizacao-o1-minimizacao-de-buracos\">4. Otimiza\u00e7\u00e3o (O1): Minimiza\u00e7\u00e3o de \"Buracos\"</h3>\n<span class=\"paragraph\">A otimiza\u00e7\u00e3o principal consiste na minimiza\u00e7\u00e3o dos tempos livres isolados no hor\u00e1rio dos professores e turmas. Para calcular um buraco, a arquitetura utiliza vari\u00e1veis indicadoras de estado (<code>Comecou</code> e <code>Terminou</code>). Um per\u00edodo constitui um \"buraco\" se o dia j\u00e1 come\u00e7ou, ainda n\u00e3o terminou, mas n\u00e3o existe nenhuma aula alocada nesse per\u00edodo espec\u00edfico. A fun\u00e7\u00e3o objetivo base (<marimo-tex class=\"arithmatex\">||(H0||)</marimo-tex>) minimiza a soma total destas vari\u00e1veis ao longo da semana.</span>\n<span class=\"paragraph\">A otimiza\u00e7\u00e3o principal consiste na minimiza\u00e7\u00e3o dos tempos livres isolados no hor\u00e1rio dos professores e turmas ao longo dos 10 per\u00edodos di\u00e1rios. Para calcular um buraco, a arquitetura utiliza vari\u00e1veis indicadoras de estado (<code>Comecou</code> e <code>Terminou</code>). Um per\u00edodo constitui um \"buraco\" se o dia j\u00e1 come\u00e7ou, ainda n\u00e3o terminou, mas n\u00e3o existe nenhuma aula alocada nesse per\u00edodo espec\u00edfico. A fun\u00e7\u00e3o objetivo base (<marimo-tex class=\"arithmatex\">||(H0||)</marimo-tex>) minimiza a soma total destas vari\u00e1veis ao longo da semana.</span>\n<h3 id=\"5-construcao-incremental-r9\">5. Constru\u00e7\u00e3o Incremental (R9)</h3>\n<span class=\"paragraph\">Perante pequenas altera\u00e7\u00f5es de recursos, gerar um hor\u00e1rio do zero resulta em longos tempos de processamento e disrup\u00e7\u00e3o na escola. A estrat\u00e9gia incremental adotada recorre \u00e0 maximiza\u00e7\u00e3o da sobreposi\u00e7\u00e3o com o hor\u00e1rio gerado anteriormente (<code>horario_base.csv</code>). Em vez de minimizar buracos, a fun\u00e7\u00e3o objetivo passa a ser a <strong>maximiza\u00e7\u00e3o estrita do somat\u00f3rio das vari\u00e1veis mantidas</strong> que j\u00e1 constavam no hor\u00e1rio antigo. O solver move apenas o estritamente necess\u00e1rio para acomodar as novas restri\u00e7\u00f5es.</span>\n<h3 id=\"6-validacao-automatica-e-performance-incremental\">6. Valida\u00e7\u00e3o Autom\u00e1tica e Performance Incremental</h3>\n<span class=\"paragraph\">Foram constru\u00eddos testes de valida\u00e7\u00e3o autom\u00e1tica na fun\u00e7\u00e3o <code>executar_testes</code>, que audita o array final gerado pelo solver quanto a sobreposi\u00e7\u00f5es, carga hor\u00e1ria, espa\u00e7amento de blocos, indisponibilidades e capacidades de salas, incluindo valida\u00e7\u00f5es l\u00f3gicas adicionais (como a salvaguarda da janela de almo\u00e7o nos per\u00edodos centrais). Em modo incremental, o modelo comprova uma disrup\u00e7\u00e3o m\u00ednima e alta efici\u00eancia, preservando ativamente o planeamento original.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "922babe2f5d6ecd8e99ccff142a3306b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "1ba9246ebfe4512e1a624a74767c7717",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "a785d3be04f34e02d2b5f7b1bccc099f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "8060dcb38357979169b3b3a4f2aa4986",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "f009ccbb513734d000afd2be499f36e7",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "b53c66491accb400a4f23ed3ec88e0cb",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "38b5e0aa6dc8fafdcaaffc2883d5929e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "1cd374d0559e955cb3129be93e63c2b8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><a href=\"https://share.gemini.google/wJf6BbJGn5p9\" rel=\"noopener noreferrer\" target=\"_blank\">Registo da intera\u00e7\u00e3o com a LLM</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "6cca5b67897ba9aaeeaa3320108be5ac",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

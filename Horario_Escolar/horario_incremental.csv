@@ -1,251 +1,251 @@
 turma,dia,periodo,disciplina,sala
-7ºA,Seg,9,Matemática,Sala Normal 1
-7ºC,Seg,9,Inglês,Sala Normal 2
-8ºB,Seg,9,Geografia,Sala Normal 3
-12ºA,Seg,9,Português,Sala Normal 4
-7ºA,Qua,1,Matemática,Sala Normal 1
-10ºA,Qua,1,Geografia,Sala Normal 2
-12ºA,Qua,1,Inglês,Sala Normal 3
-7ºA,Qui,2,Matemática,Sala Normal 1
+7ºA,Ter,10,Matemática,Sala Normal 1
+7ºB,Ter,10,Inglês,Sala Normal 2
+11ºA,Ter,10,Português,Sala Normal 3
+7ºA,Qui,6,Matemática,Sala Normal 1
+7ºB,Qui,6,Geografia,Sala Normal 2
+8ºB,Qui,6,Inglês,Sala Normal 3
+9ºA,Qui,6,História,Sala Normal 4
+7ºA,Sex,10,Matemática,Sala Normal 1
+7ºB,Sex,10,Inglês,Sala Normal 2
+9ºA,Sex,10,Português,Sala Normal 3
+7ºA,Ter,8,Português,Sala Normal 1
+7ºB,Ter,8,Geografia,Sala Normal 2
+7ºC,Ter,8,Inglês,Sala Normal 3
+10ºA,Ter,8,Matemática,Sala Normal 4
+7ºA,Qua,5,Português,Sala Normal 1
+7ºA,Sex,8,Português,Sala Normal 1
+8ºA,Sex,8,Matemática,Sala Normal 2
+8ºB,Sex,8,História,Sala Normal 3
+11ºA,Sex,8,Inglês,Sala Normal 4
+7ºA,Ter,6,Inglês,Sala Normal 1
+7ºC,Ter,6,Matemática,Sala Normal 2
+8ºB,Ter,6,Geografia,Sala Normal 3
+7ºA,Qui,8,Inglês,Sala Normal 1
+7ºC,Qui,8,Matemática,Sala Normal 2
+8ºA,Qui,8,História,Sala Normal 3
+9ºA,Qui,8,Geografia,Sala Normal 4
+7ºA,Sex,7,Inglês,Sala Normal 1
+9ºA,Sex,7,História,Sala Normal 2
+11ºA,Sex,7,Matemática,Sala Normal 3
+7ºA,Qui,2,História,Sala Normal 1
 10ºA,Qui,2,Português,Sala Normal 2
-7ºA,Ter,2,Português,Sala Normal 1
-8ºA,Ter,2,Inglês,Sala Normal 2
-8ºB,Ter,2,Geografia,Sala Normal 3
-10ºA,Ter,2,Matemática,Sala Normal 4
-7ºA,Qua,3,Português,Sala Normal 1
-7ºC,Qua,3,História,Sala Normal 2
-9ºA,Qua,3,Inglês,Sala Normal 3
-12ºA,Qua,3,Geografia,Sala Normal 4
-7ºA,Qui,3,Português,Sala Normal 1
-8ºB,Qui,3,História,Sala Normal 2
-12ºB,Qui,3,Matemática,Sala Normal 3
-7ºA,Ter,1,Inglês,Sala Normal 1
-7ºB,Ter,1,Geografia,Sala Normal 2
-8ºA,Ter,1,Matemática,Sala Normal 3
-7ºA,Qua,4,Inglês,Sala Normal 1
-7ºC,Qua,4,Matemática,Sala Normal 2
-9ºA,Qua,4,História,Sala Normal 3
-7ºA,Sex,3,Inglês,Sala Normal 1
-12ºB,Sex,3,Português,Sala Normal 2
-7ºA,Qua,2,História,Sala Normal 1
-7ºC,Qua,2,Inglês,Sala Normal 2
-9ºA,Qua,2,Português,Sala Normal 3
-11ºA,Qua,2,Geografia,Sala Normal 4
-12ºA,Qua,2,Matemática,Sala Normal 5
-7ºA,Qui,1,História,Sala Normal 1
-8ºA,Qui,1,Inglês,Sala Normal 2
-9ºA,Qui,1,Matemática,Sala Normal 3
-7ºA,Seg,8,Geografia,Sala Normal 1
-10ºA,Seg,8,Inglês,Sala Normal 2
-12ºA,Seg,8,História,Sala Normal 3
-7ºA,Qua,9,Geografia,Sala Normal 1
-7ºB,Qua,9,Inglês,Sala Normal 2
-12ºB,Qua,9,Português,Sala Normal 3
-7ºA,Seg,10,Físico-Química,Laboratório 1
-7ºC,Seg,10,Ciências Naturais,Laboratório 2
-7ºA,Ter,10,Físico-Química,Laboratório 1
-12ºA,Ter,10,Ciências Naturais,Laboratório 2
-7ºA,Qua,10,Físico-Química,Laboratório 1
-9ºA,Qua,10,Ciências Naturais,Laboratório 2
-7ºA,Seg,7,Ciências Naturais,Laboratório 1
-7ºB,Seg,7,Físico-Química,Laboratório 2
-7ºA,Ter,9,Ciências Naturais,Laboratório 1
-9ºA,Ter,9,Físico-Química,Laboratório 2
-7ºA,Qui,4,Ciências Naturais,Laboratório 1
-7ºC,Qui,4,Físico-Química,Laboratório 2
-7ºA,Ter,7,Educação Física,Ginásio 1
-7ºA,Ter,8,Educação Física,Ginásio 1
-7ºA,Ter,3,TIC,Informática 1
-7ºA,Ter,4,TIC,Informática 1
-7ºA,Qua,7,Artes Visuais,Oficina 1
-7ºA,Qua,8,Artes Visuais,Oficina 1
-7ºB,Seg,3,Matemática,Sala Normal 1
-8ºA,Seg,3,História,Sala Normal 2
-7ºB,Qui,9,Matemática,Sala Normal 1
-7ºC,Qui,9,Geografia,Sala Normal 2
-9ºA,Qui,9,História,Sala Normal 3
-10ºA,Qui,9,Inglês,Sala Normal 4
-7ºB,Sex,1,Matemática,Sala Normal 1
-8ºA,Sex,1,Inglês,Sala Normal 2
-10ºA,Sex,1,Geografia,Sala Normal 3
-11ºA,Sex,1,Português,Sala Normal 4
-7ºB,Ter,4,Português,Sala Normal 1
-11ºA,Ter,4,História,Sala Normal 2
-7ºB,Qui,10,Português,Sala Normal 1
-8ºB,Qui,10,Matemática,Sala Normal 2
-9ºA,Qui,10,Geografia,Sala Normal 3
-7ºB,Sex,10,Português,Sala Normal 1
-9ºA,Sex,10,Inglês,Sala Normal 2
-7ºB,Ter,3,Inglês,Sala Normal 1
-8ºA,Ter,3,Geografia,Sala Normal 2
-10ºA,Ter,3,História,Sala Normal 3
-11ºA,Ter,3,Português,Sala Normal 4
-7ºB,Sex,9,Inglês,Sala Normal 1
-8ºA,Sex,9,Geografia,Sala Normal 2
-8ºB,Sex,9,Português,Sala Normal 3
-7ºB,Seg,4,História,Sala Normal 1
-12ºA,Seg,4,Matemática,Sala Normal 2
-12ºB,Seg,4,Português,Sala Normal 3
-7ºB,Sex,4,História,Sala Normal 1
-12ºA,Sex,4,Português,Sala Normal 2
-12ºB,Sex,4,Matemática,Sala Normal 3
-7ºB,Sex,8,Geografia,Sala Normal 1
-7ºC,Sex,8,Inglês,Sala Normal 2
-9ºA,Sex,8,Português,Sala Normal 3
-7ºB,Qui,7,Físico-Química,Laboratório 1
-10ºA,Qui,7,Ciências Naturais,Laboratório 2
+7ºA,Sex,9,História,Sala Normal 1
+7ºB,Sex,9,Matemática,Sala Normal 2
+11ºA,Sex,9,Geografia,Sala Normal 3
+12ºA,Sex,9,Inglês,Sala Normal 4
+7ºA,Ter,9,Geografia,Sala Normal 1
+7ºB,Ter,9,Matemática,Sala Normal 2
+7ºC,Ter,9,História,Sala Normal 3
+8ºB,Ter,9,Português,Sala Normal 4
+7ºA,Qui,9,Geografia,Sala Normal 1
+7ºB,Qui,9,História,Sala Normal 2
+8ºA,Qui,9,Inglês,Sala Normal 3
+8ºB,Qui,9,Matemática,Sala Normal 4
+9ºA,Qui,9,Português,Sala Normal 5
+7ºA,Seg,3,Físico-Química,Laboratório 1
+9ºA,Seg,3,Ciências Naturais,Laboratório 2
+7ºA,Qui,7,Físico-Química,Laboratório 1
+7ºA,Sex,4,Físico-Química,Laboratório 1
+12ºB,Sex,4,Ciências Naturais,Laboratório 2
+7ºA,Ter,7,Ciências Naturais,Laboratório 1
+12ºB,Ter,7,Físico-Química,Laboratório 2
+7ºA,Qua,3,Ciências Naturais,Laboratório 1
+8ºA,Qua,3,Físico-Química,Laboratório 2
+7ºA,Sex,5,Ciências Naturais,Laboratório 1
+8ºA,Sex,5,Físico-Química,Laboratório 2
+7ºA,Seg,4,Educação Física,Ginásio 1
+7ºA,Seg,5,Educação Física,Ginásio 1
+7ºA,Seg,1,TIC,Informática 1
+7ºA,Seg,2,TIC,Informática 1
+7ºA,Sex,2,Artes Visuais,Oficina 1
+7ºA,Sex,3,Artes Visuais,Oficina 1
+7ºB,Seg,4,Matemática,Sala Normal 1
+7ºB,Seg,3,Português,Sala Normal 1
+7ºC,Seg,3,Matemática,Sala Normal 2
+12ºB,Seg,3,Inglês,Sala Normal 3
+7ºB,Qua,1,Português,Sala Normal 1
+10ºA,Qua,1,Inglês,Sala Normal 2
+7ºB,Sex,6,Português,Sala Normal 1
+9ºA,Sex,6,Inglês,Sala Normal 2
+10ºA,Sex,6,História,Sala Normal 3
+12ºB,Sex,6,Matemática,Sala Normal 4
+7ºB,Qua,4,Inglês,Sala Normal 1
+12ºA,Qua,4,Português,Sala Normal 2
+7ºB,Seg,6,História,Sala Normal 1
+10ºA,Seg,6,Inglês,Sala Normal 2
+7ºB,Ter,4,Físico-Química,Laboratório 1
+9ºA,Ter,4,Ciências Naturais,Laboratório 2
+7ºB,Qua,5,Físico-Química,Laboratório 1
+9ºA,Qua,5,Ciências Naturais,Laboratório 2
 7ºB,Sex,7,Físico-Química,Laboratório 1
-9ºA,Sex,7,Ciências Naturais,Laboratório 2
+8ºA,Sex,7,Ciências Naturais,Laboratório 2
 7ºB,Seg,2,Ciências Naturais,Laboratório 1
-7ºB,Ter,2,Ciências Naturais,Laboratório 1
-12ºA,Ter,2,Físico-Química,Laboratório 2
-7ºB,Qui,8,Ciências Naturais,Laboratório 1
-12ºB,Qui,8,Físico-Química,Laboratório 2
-7ºB,Qua,7,Educação Física,Ginásio 1
-7ºB,Qua,8,Educação Física,Ginásio 1
-7ºB,Sex,2,TIC,Informática 1
-7ºB,Sex,3,TIC,Informática 1
-7ºB,Seg,9,Artes Visuais,Oficina 1
-7ºB,Seg,10,Artes Visuais,Oficina 1
-7ºC,Ter,10,Matemática,Sala Normal 1
-8ºB,Ter,10,História,Sala Normal 2
-12ºB,Ter,10,Inglês,Sala Normal 3
-7ºC,Qui,8,Matemática,Sala Normal 1
-8ºA,Qui,8,Português,Sala Normal 2
-10ºA,Qui,8,História,Sala Normal 3
-11ºA,Qui,8,Geografia,Sala Normal 4
-12ºA,Qui,8,Inglês,Sala Normal 5
-7ºC,Ter,8,Português,Sala Normal 1
-8ºB,Ter,8,Inglês,Sala Normal 2
-9ºA,Ter,8,Matemática,Sala Normal 3
-7ºC,Qui,7,Português,Sala Normal 1
-8ºA,Qui,7,Matemática,Sala Normal 2
-11ºA,Qui,7,Inglês,Sala Normal 3
-7ºC,Sex,7,Português,Sala Normal 1
-8ºB,Sex,7,Inglês,Sala Normal 2
-11ºA,Sex,7,História,Sala Normal 3
-12ºA,Sex,7,Matemática,Sala Normal 4
-7ºC,Ter,9,História,Sala Normal 1
-8ºB,Ter,9,Matemática,Sala Normal 2
-12ºA,Ter,9,Português,Sala Normal 3
-12ºB,Ter,9,Geografia,Sala Normal 4
-7ºC,Qua,8,Geografia,Sala Normal 1
-9ºA,Qua,8,Matemática,Sala Normal 2
-10ºA,Qua,8,Inglês,Sala Normal 3
-11ºA,Qua,8,Português,Sala Normal 4
-12ºB,Qua,8,História,Sala Normal 5
-7ºC,Ter,7,Físico-Química,Laboratório 1
-8ºB,Ter,7,Ciências Naturais,Laboratório 2
-7ºC,Qua,7,Físico-Química,Laboratório 1
-8ºB,Qua,7,Ciências Naturais,Laboratório 2
-7ºC,Qui,10,Ciências Naturais,Laboratório 1
-11ºA,Qui,10,Físico-Química,Laboratório 2
-7ºC,Sex,9,Ciências Naturais,Laboratório 1
-7ºC,Qua,9,Educação Física,Ginásio 1
-7ºC,Qua,10,Educação Física,Ginásio 1
-7ºC,Seg,3,TIC,Informática 1
-7ºC,Seg,4,TIC,Informática 1
-7ºC,Seg,7,Artes Visuais,Oficina 1
-7ºC,Seg,8,Artes Visuais,Oficina 1
-8ºA,Seg,2,Matemática,Sala Normal 1
-12ºA,Seg,2,Geografia,Sala Normal 2
-12ºB,Seg,2,História,Sala Normal 3
-8ºA,Seg,1,Português,Sala Normal 1
-10ºA,Seg,1,Matemática,Sala Normal 2
-12ºA,Seg,1,Inglês,Sala Normal 3
-12ºB,Seg,1,Geografia,Sala Normal 4
-8ºA,Qua,10,Português,Sala Normal 1
-8ºB,Qua,10,Inglês,Sala Normal 2
-10ºA,Qua,10,Matemática,Sala Normal 3
-12ºA,Qua,10,História,Sala Normal 4
-8ºA,Qui,4,História,Sala Normal 1
-8ºB,Qui,4,Português,Sala Normal 2
-11ºA,Qui,4,Matemática,Sala Normal 3
-12ºB,Qui,4,Inglês,Sala Normal 4
-8ºA,Seg,4,Físico-Química,Laboratório 1
-11ºA,Seg,4,Ciências Naturais,Laboratório 2
-8ºA,Qui,3,Físico-Química,Laboratório 1
-8ºA,Sex,10,Físico-Química,Laboratório 1
-8ºB,Sex,10,Ciências Naturais,Laboratório 2
-8ºA,Ter,4,Ciências Naturais,Laboratório 1
-8ºB,Ter,4,Físico-Química,Laboratório 2
-8ºA,Qua,8,Ciências Naturais,Laboratório 1
-8ºA,Qui,2,Ciências Naturais,Laboratório 1
-9ºA,Qui,2,Físico-Química,Laboratório 2
-8ºA,Sex,7,Educação Física,Ginásio 1
-8ºA,Sex,8,Educação Física,Ginásio 1
-8ºA,Qui,9,TIC,Informática 1
-8ºA,Qui,10,TIC,Informática 1
-8ºA,Sex,3,Artes Visuais,Oficina 1
-8ºA,Sex,4,Artes Visuais,Oficina 1
-8ºB,Seg,7,Matemática,Sala Normal 1
-9ºA,Seg,7,Português,Sala Normal 2
-11ºA,Seg,7,Inglês,Sala Normal 3
-8ºB,Seg,10,Português,Sala Normal 1
-12ºB,Seg,10,Matemática,Sala Normal 2
-8ºB,Seg,8,Físico-Química,Laboratório 1
-9ºA,Seg,8,Ciências Naturais,Laboratório 2
-8ºB,Qui,9,Físico-Química,Laboratório 1
-12ºB,Qui,9,Ciências Naturais,Laboratório 2
-8ºB,Qui,7,Educação Física,Ginásio 1
-8ºB,Qui,8,Educação Física,Ginásio 1
-8ºB,Qua,8,TIC,Informática 1
-8ºB,Qua,9,TIC,Informática 1
-8ºB,Qui,1,Artes Visuais,Oficina 1
-8ºB,Qui,2,Artes Visuais,Oficina 1
-9ºA,Ter,7,Inglês,Sala Normal 1
-10ºA,Ter,7,Português,Sala Normal 2
-11ºA,Ter,7,Matemática,Sala Normal 3
-9ºA,Qua,7,Geografia,Sala Normal 1
-10ºA,Qua,7,Português,Sala Normal 2
-11ºA,Qua,7,Inglês,Sala Normal 3
-9ºA,Qua,9,Físico-Química,Laboratório 1
-10ºA,Qua,9,Ciências Naturais,Laboratório 2
-9ºA,Seg,9,Educação Física,Ginásio 1
-9ºA,Seg,10,Educação Física,Ginásio 1
-9ºA,Qui,7,TIC,Informática 1
-9ºA,Qui,8,TIC,Informática 1
-9ºA,Qui,3,Artes Visuais,Oficina 1
-9ºA,Qui,4,Artes Visuais,Oficina 1
-10ºA,Ter,1,Físico-Química,Laboratório 1
-10ºA,Qua,2,Físico-Química,Laboratório 1
-10ºA,Sex,8,Físico-Química,Laboratório 1
-12ºB,Sex,8,Ciências Naturais,Laboratório 2
-10ºA,Ter,8,Ciências Naturais,Laboratório 1
+7ºC,Seg,2,Físico-Química,Laboratório 2
+7ºB,Ter,1,Ciências Naturais,Laboratório 1
+7ºB,Sex,8,Ciências Naturais,Laboratório 1
+7ºB,Ter,2,Educação Física,Ginásio 1
+7ºB,Ter,3,Educação Física,Ginásio 1
+7ºB,Qua,2,TIC,Informática 1
+7ºB,Qua,3,TIC,Informática 1
+7ºB,Ter,6,Artes Visuais,Oficina 1
+7ºB,Ter,7,Artes Visuais,Oficina 1
+7ºC,Seg,5,Português,Sala Normal 1
+8ºB,Seg,5,Matemática,Sala Normal 2
+9ºA,Seg,5,Geografia,Sala Normal 3
+7ºC,Ter,4,Português,Sala Normal 1
+8ºA,Ter,4,Inglês,Sala Normal 2
+10ºA,Ter,4,História,Sala Normal 3
+7ºC,Qui,3,Português,Sala Normal 1
+11ºA,Qui,3,História,Sala Normal 2
+12ºA,Qui,3,Inglês,Sala Normal 3
+12ºB,Qui,3,Geografia,Sala Normal 4
+7ºC,Qua,3,Inglês,Sala Normal 1
+9ºA,Qua,3,Português,Sala Normal 2
+12ºB,Qua,3,Matemática,Sala Normal 3
+7ºC,Qui,10,Inglês,Sala Normal 1
+8ºA,Qui,10,Matemática,Sala Normal 2
+11ºA,Qui,10,Português,Sala Normal 3
+7ºC,Qui,7,História,Sala Normal 1
+8ºA,Qui,7,Geografia,Sala Normal 2
+9ºA,Qui,7,Inglês,Sala Normal 3
+10ºA,Qui,7,Matemática,Sala Normal 4
+7ºC,Ter,7,Geografia,Sala Normal 1
+8ºB,Ter,7,Inglês,Sala Normal 2
+7ºC,Sex,1,Geografia,Sala Normal 1
+10ºA,Sex,1,Inglês,Sala Normal 2
+7ºC,Qua,2,Físico-Química,Laboratório 1
+8ºA,Qua,2,Ciências Naturais,Laboratório 2
+7ºC,Qui,9,Físico-Química,Laboratório 1
+7ºC,Seg,4,Ciências Naturais,Laboratório 1
+9ºA,Seg,4,Físico-Química,Laboratório 2
+7ºC,Ter,3,Ciências Naturais,Laboratório 1
+7ºC,Sex,2,Ciências Naturais,Laboratório 1
+8ºB,Sex,2,Físico-Química,Laboratório 2
+7ºC,Qui,4,Educação Física,Ginásio 1
+7ºC,Qui,5,Educação Física,Ginásio 1
+7ºC,Qua,4,TIC,Informática 1
+7ºC,Qua,5,TIC,Informática 1
+7ºC,Sex,4,Artes Visuais,Oficina 1
+7ºC,Sex,5,Artes Visuais,Oficina 1
+8ºA,Qua,10,Matemática,Sala Normal 1
+12ºB,Qua,10,Português,Sala Normal 2
+8ºA,Seg,8,Português,Sala Normal 1
+11ºA,Seg,8,Geografia,Sala Normal 2
+12ºB,Seg,8,Matemática,Sala Normal 3
+8ºA,Ter,3,Português,Sala Normal 1
+11ºA,Ter,3,Matemática,Sala Normal 2
+12ºA,Ter,3,Inglês,Sala Normal 3
+12ºB,Ter,3,Geografia,Sala Normal 4
+8ºA,Qua,7,Português,Sala Normal 1
+8ºB,Qua,7,Geografia,Sala Normal 2
+11ºA,Qua,7,História,Sala Normal 3
+8ºA,Qua,8,Inglês,Sala Normal 1
+8ºB,Qua,8,Matemática,Sala Normal 2
+12ºB,Qua,8,História,Sala Normal 3
+8ºA,Qua,9,História,Sala Normal 1
+8ºB,Qua,9,Português,Sala Normal 2
+11ºA,Qua,9,Matemática,Sala Normal 3
+8ºA,Sex,2,Geografia,Sala Normal 1
+12ºA,Sex,2,História,Sala Normal 2
+8ºA,Qui,6,Físico-Química,Laboratório 1
+8ºA,Ter,5,Ciências Naturais,Laboratório 1
+9ºA,Ter,5,Físico-Química,Laboratório 2
+8ºA,Sex,3,Educação Física,Ginásio 1
+8ºA,Sex,4,Educação Física,Ginásio 1
+8ºA,Seg,6,TIC,Informática 1
+8ºA,Seg,7,TIC,Informática 1
+8ºA,Qua,4,Artes Visuais,Oficina 1
+8ºA,Qua,5,Artes Visuais,Oficina 1
+8ºB,Sex,4,Português,Sala Normal 1
+12ºA,Sex,4,Matemática,Sala Normal 2
+8ºB,Seg,9,Inglês,Sala Normal 1
+10ºA,Seg,9,Matemática,Sala Normal 2
+8ºB,Qua,6,História,Sala Normal 1
+10ºA,Qua,6,Geografia,Sala Normal 2
+11ºA,Qua,6,Inglês,Sala Normal 3
+12ºA,Qua,6,Matemática,Sala Normal 4
+8ºB,Seg,7,Físico-Química,Laboratório 1
+10ºA,Seg,7,Ciências Naturais,Laboratório 2
+8ºB,Qui,8,Físico-Química,Laboratório 1
+8ºB,Seg,8,Ciências Naturais,Laboratório 1
+8ºB,Ter,8,Ciências Naturais,Laboratório 1
 11ºA,Ter,8,Físico-Química,Laboratório 2
-10ºA,Sex,3,Educação Física,Ginásio 1
-10ºA,Sex,4,Educação Física,Ginásio 1
-10ºA,Ter,9,TIC,Informática 1
-10ºA,Ter,10,TIC,Informática 1
-10ºA,Qua,3,Artes Visuais,Oficina 1
-10ºA,Qua,4,Artes Visuais,Oficina 1
-11ºA,Sex,2,Matemática,Sala Normal 1
-12ºB,Sex,2,Inglês,Sala Normal 2
-11ºA,Qua,3,Físico-Química,Laboratório 1
-11ºA,Qui,1,Ciências Naturais,Laboratório 1
-12ºA,Qui,1,Físico-Química,Laboratório 2
-11ºA,Sex,3,Ciências Naturais,Laboratório 1
-12ºA,Sex,3,Físico-Química,Laboratório 2
-11ºA,Seg,2,Educação Física,Ginásio 1
-11ºA,Seg,3,Educação Física,Ginásio 1
-11ºA,Sex,9,TIC,Informática 1
-11ºA,Sex,10,TIC,Informática 1
-11ºA,Ter,9,Artes Visuais,Oficina 1
-11ºA,Ter,10,Artes Visuais,Oficina 1
-12ºA,Qua,4,Ciências Naturais,Laboratório 1
-12ºA,Sex,1,Ciências Naturais,Laboratório 1
-12ºA,Qui,9,Educação Física,Ginásio 1
-12ºA,Qui,10,Educação Física,Ginásio 1
-12ºA,Qui,3,TIC,Informática 1
-12ºA,Qui,4,TIC,Informática 1
-12ºA,Ter,3,Artes Visuais,Oficina 1
-12ºA,Ter,4,Artes Visuais,Oficina 1
-12ºB,Seg,9,Físico-Química,Laboratório 1
-12ºB,Ter,3,Físico-Química,Laboratório 1
-12ºB,Qua,1,Ciências Naturais,Laboratório 1
-12ºB,Qua,3,Educação Física,Ginásio 1
-12ºB,Qua,4,Educação Física,Ginásio 1
-12ºB,Seg,7,TIC,Informática 1
-12ºB,Seg,8,TIC,Informática 1
-12ºB,Ter,1,Artes Visuais,Oficina 1
-12ºB,Ter,2,Artes Visuais,Oficina 1
+8ºB,Qui,4,Ciências Naturais,Laboratório 1
+8ºB,Sex,6,Educação Física,Ginásio 1
+8ºB,Sex,7,Educação Física,Ginásio 1
+8ºB,Seg,3,TIC,Informática 1
+8ºB,Seg,4,TIC,Informática 1
+8ºB,Qui,2,Artes Visuais,Oficina 1
+8ºB,Qui,3,Artes Visuais,Oficina 1
+9ºA,Seg,1,Matemática,Sala Normal 1
+9ºA,Ter,1,Matemática,Sala Normal 1
+12ºB,Ter,1,Português,Sala Normal 2
+9ºA,Qui,4,Matemática,Sala Normal 1
+12ºA,Qui,4,História,Sala Normal 2
+9ºA,Seg,7,Inglês,Sala Normal 1
+12ºA,Seg,7,Matemática,Sala Normal 2
+9ºA,Qua,4,Físico-Química,Laboratório 1
+9ºA,Sex,8,Educação Física,Ginásio 1
+9ºA,Sex,9,Educação Física,Ginásio 1
+9ºA,Ter,2,TIC,Informática 1
+9ºA,Ter,3,TIC,Informática 1
+9ºA,Seg,8,Artes Visuais,Oficina 1
+9ºA,Seg,9,Artes Visuais,Oficina 1
+10ºA,Ter,5,Português,Sala Normal 1
+12ºB,Ter,5,História,Sala Normal 2
+10ºA,Qua,2,Português,Sala Normal 1
+12ºB,Qua,2,Inglês,Sala Normal 2
+10ºA,Ter,2,Geografia,Sala Normal 1
+10ºA,Seg,1,Físico-Química,Laboratório 1
+10ºA,Ter,10,Físico-Química,Laboratório 1
+12ºA,Ter,10,Ciências Naturais,Laboratório 2
+10ºA,Qua,10,Físico-Química,Laboratório 1
+12ºA,Qua,10,Ciências Naturais,Laboratório 2
+10ºA,Ter,9,Ciências Naturais,Laboratório 1
+10ºA,Qua,8,Ciências Naturais,Laboratório 1
+11ºA,Qua,8,Físico-Química,Laboratório 2
+10ºA,Qui,9,Educação Física,Ginásio 1
+10ºA,Qui,10,Educação Física,Ginásio 1
+10ºA,Sex,2,TIC,Informática 1
+10ºA,Sex,3,TIC,Informática 1
+10ºA,Qui,4,Artes Visuais,Oficina 1
+10ºA,Qui,5,Artes Visuais,Oficina 1
+11ºA,Seg,10,Português,Sala Normal 1
+11ºA,Seg,2,Inglês,Sala Normal 1
+12ºA,Seg,2,Geografia,Sala Normal 2
+12ºB,Seg,2,Português,Sala Normal 3
+11ºA,Sex,3,Físico-Química,Laboratório 1
+11ºA,Seg,5,Ciências Naturais,Laboratório 1
+11ºA,Qui,5,Ciências Naturais,Laboratório 1
+11ºA,Sex,1,Ciências Naturais,Laboratório 1
+12ºA,Sex,1,Físico-Química,Laboratório 2
+11ºA,Ter,6,Educação Física,Ginásio 1
+11ºA,Ter,7,Educação Física,Ginásio 1
+11ºA,Sex,4,TIC,Informática 1
+11ºA,Sex,5,TIC,Informática 1
+11ºA,Qua,2,Artes Visuais,Oficina 1
+11ºA,Qua,3,Artes Visuais,Oficina 1
+12ºA,Qui,5,Português,Sala Normal 1
+12ºA,Sex,3,Português,Sala Normal 1
+12ºA,Sex,5,Geografia,Sala Normal 1
+12ºA,Seg,6,Físico-Química,Laboratório 1
+12ºA,Qua,7,Físico-Química,Laboratório 1
+12ºA,Seg,10,Ciências Naturais,Laboratório 1
+12ºA,Qui,1,Educação Física,Ginásio 1
+12ºA,Qui,2,Educação Física,Ginásio 1
+12ºA,Ter,4,TIC,Informática 1
+12ºA,Ter,5,TIC,Informática 1
+12ºA,Qui,7,Artes Visuais,Oficina 1
+12ºA,Qui,8,Artes Visuais,Oficina 1
+12ºB,Qui,1,Inglês,Sala Normal 1
+12ºB,Qui,2,Físico-Química,Laboratório 1
+12ºB,Sex,10,Físico-Química,Laboratório 1
+12ºB,Seg,9,Ciências Naturais,Laboratório 1
+12ºB,Qua,9,Ciências Naturais,Laboratório 1
+12ºB,Qua,6,Educação Física,Ginásio 1
+12ºB,Qua,7,Educação Física,Ginásio 1
+12ºB,Qui,4,TIC,Informática 1
+12ºB,Qui,5,TIC,Informática 1
+12ºB,Seg,6,Artes Visuais,Oficina 1
+12ºB,Seg,7,Artes Visuais,Oficina 1

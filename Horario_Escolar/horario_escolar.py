@@ -77,8 +77,6 @@ def _():
 
 @app.cell
 def _(os):
-    # Adaptação para Marimo: Utilização de os.getcwd()
-    # pois __file__ não está disponível por defeito em todas as versões no contexto de notebook
     BASE_DIR = os.getcwd()
     DADOS_DIR = os.path.join(BASE_DIR, "dados")
 
@@ -316,6 +314,8 @@ def _(SolucaoInviavelError, collections, cp_model):
                                     soma_aulas_periodo == bloco_atual + bloco_anterior
                                 )
 
+            ocupado_5 = {}
+            ocupado_6 = {}
             for t in turmas:
                 for w in self.dias:
                     aulas_p5 = [
@@ -328,7 +328,16 @@ def _(SolucaoInviavelError, collections, cp_model):
                         for (vt, vd, vw, vp), var in self.aulas.items()
                         if vt == t and vw == w and vp == 6
                     ]
-                    self.model.Add(sum(aulas_p5) + sum(aulas_p6) <= 0)
+                    ocupado_5[(t, w)] = sum(aulas_p5)
+                    ocupado_6[(t, w)] = sum(aulas_p6)
+                    self.model.Add(ocupado_5[(t, w)] + ocupado_6[(t, w)] <= 1)
+
+            capacidade_cantina = (len(turmas) + 1) // 2
+            for w in self.dias:
+                almoco_5 = [1 - ocupado_5[(t, w)] for t in turmas]
+                almoco_6 = [1 - ocupado_6[(t, w)] for t in turmas]
+                self.model.Add(sum(almoco_5) <= capacidade_cantina)
+                self.model.Add(sum(almoco_6) <= capacidade_cantina)
 
             for t in turmas:
                 for w in self.dias:
@@ -393,6 +402,8 @@ def _(SolucaoInviavelError, collections, cp_model):
                             if vw == w and vp == p and vd in disciplinas_do_prof
                         ]
                         aulas_prof_p[p] = sum(aulas_no_periodo)
+
+                    self.model.Add(aulas_prof_p[5] + aulas_prof_p[6] <= 1)
 
                     comecou = {}
                     terminou = {}
@@ -527,11 +538,6 @@ def _(collections):
                     f"R6 FALHOU: {prof} a lecionar a {t} (Dia {d}, Período {p}) mas devia estar indisponível."
                 )
 
-            if p in [5, 6]:
-                erros.append(
-                    f"EXTRA FALHOU: Aula alocada na hora de almoço (Período {p}) para a turma {t}."
-                )
-
         for chave, aulas in aulas_turma.items():
             if len(aulas) > 1:
                 erros.append(
@@ -589,9 +595,53 @@ def _(collections):
                                     f"R4 FALHOU: Turma {t} tem bloco duplo NÃO consecutivo de {disc} no dia {dia}: {periodos_dia}"
                                 )
 
+        dias_semana = ["Seg", "Ter", "Qua", "Qui", "Sex"]
+        profs_existentes = set(prof_por_disc.values())
+
+        ocupado_turma = collections.defaultdict(int)
+        ocupado_prof = collections.defaultdict(int)
+        for aula in horario:
+            p = int(aula["periodo"])
+            if p in (5, 6):
+                prof = prof_por_disc.get(aula["disciplina"], "Desconhecido")
+                ocupado_turma[(aula["turma"], aula["dia"], p)] += 1
+                ocupado_prof[(prof, aula["dia"], p)] += 1
+
+        for t in turmas_existentes:
+            for d in dias_semana:
+                if ocupado_turma[(t, d, 5)] and ocupado_turma[(t, d, 6)]:
+                    erros.append(
+                        f"ALMOÇO FALHOU: Turma {t} ({d}) ocupa P5 e P6, sem hora para comer."
+                    )
+
+        for prof in profs_existentes:
+            for d in dias_semana:
+                if ocupado_prof[(prof, d, 5)] and ocupado_prof[(prof, d, 6)]:
+                    erros.append(
+                        f"ALMOÇO FALHOU: {prof} ({d}) ocupa P5 e P6, sem hora para comer."
+                    )
+
+        capacidade_cantina = (len(turmas_existentes) + 1) // 2
+        for d in dias_semana:
+            livres_5 = sum(
+                1 for t in turmas_existentes if not ocupado_turma[(t, d, 5)]
+            )
+            livres_6 = sum(
+                1 for t in turmas_existentes if not ocupado_turma[(t, d, 6)]
+            )
+
+            if livres_5 > capacidade_cantina or livres_6 > capacidade_cantina:
+                erros.append(
+                    f"CANTINA FALHOU: {d} excede a capacidade {capacidade_cantina} (P5={livres_5}, P6={livres_6})."
+                )
+            if abs(livres_5 - livres_6) > 1:
+                erros.append(
+                    f"CANTINA FALHOU: {d} com turnos desequilibrados (P5={livres_5}, P6={livres_6})."
+                )
+
         if not erros:
             print(
-                "[SUCESSO] Todos os testes passaram! As regras (R1-R8) e horas de almoço (Extra) estão perfeitas.\n"
+                "[SUCESSO] Todos os testes passaram! As regras (R1-R8), os almoços de turmas e professores e a cantina estão validos.\n"
             )
         else:
             print(f"\n[FALHA] Foram encontrados {len(erros)} erro(s) no horário:")
@@ -705,7 +755,7 @@ def _(
 
             if opcao not in ["0", "1"]:
                 print("Opção inválida. A terminar.", file=sys.stderr)
-                return  # Adaptado para Notebook (substitui sys.exit(1))
+                return  
 
             print("\nA carregar dados iniciais...")
             dados_iniciais = CarregadorDados.carregar_todos(CONFIG["arquivos"])
@@ -730,7 +780,7 @@ def _(
                         f"Erro ao carregar o horário base (H0) necessário para a construção incremental: {e}",
                         file=sys.stderr,
                     )
-                    return  # Adaptado para Notebook
+                    return  
 
             print("\n--- GERAÇÃO DE HORÁRIO ---")
             inicio = time.time()
@@ -758,7 +808,7 @@ def _(
 
         except Exception as e:
             print(f"Erro inesperado: {e}", file=sys.stderr)
-            return  # Adaptado para Notebook
+            return  
 
     return (main,)
 
@@ -773,7 +823,6 @@ def _(mo):
 
 @app.cell
 def _(main):
-    # Iniciar programa
     main()
     return
 

@@ -224,7 +224,7 @@ def _(N, finais, iniciais):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## A3 — Definição da vizinhança e regra B3/S23
+    ## A3 — Definição da vizinhança e regra B3/S2
 
     ### Definição da vizinhança
 
@@ -1837,8 +1837,6 @@ def _(mo):
     mo.md(r"""
     ### Resultados dos testes de escalabilidade
 
-    Foram realizadas três séries de testes, cada uma com três execuções por configuração. Os valores apresentados nas colunas "Execução 1", "Execução 2" e "Execução 3" correspondem à média de cada série. A média final considera as nove medições.
-
     #### Tempo de construção das restrições (segundos)
 
     | N | Modalidade | Execução 1 | Execução 2 | Execução 3 | Tempo médio |
@@ -1949,7 +1947,7 @@ def _(mo):
     - apoio na construção da FSM e das relações de transição utilizando Z3;
     - discussão da diferença entre atualização individual e simultânea;
     - construção e verificação de contraexemplos para as propriedades de segurança e permanência;
-    - desenvolvimento de testes automáticos e comparação entre simulação Python e verificação simbólica;
+    - desenvolvimento do código;
     - correção de problemas de implementação, incluindo a contagem das células finais e conflitos de variáveis no Marimo;
     - organização dos testes de eficiência computacional e escalabilidade;
     - apoio na documentação e apresentação dos resultados.

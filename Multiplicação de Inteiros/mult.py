@@ -504,7 +504,7 @@ def _(
 def _(mo):
     mo.md(r"""
     Registo da interação com a LLM: 
-    `https://share.gemini.google/136KXvCJD0LZ`
+    `https://share.gemini.google/U8q87XIOU1al`
     """)
     return
 
